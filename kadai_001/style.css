@@ -1,0 +1,135 @@
+body {
+  max-width: 1080px;
+  margin: 0 auto 0 auto;
+  background-color:#ffffff ;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-color:#000000 ;
+  font-style: normal;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#index-h1{
+  font-size: 34px;
+  font-weight: bold;
+  border: 1px solid black;
+  margin-left:60px;
+  margin-bottom:20px;
+  padding:0 10px 0 10px;
+}
+
+#nav-pc {
+  display: flex;
+  margin-right:60px;
+  margin-bottom:20px;
+  list-style:none;
+ }
+
+ #nav-pc a{
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: bold;
+ }
+
+#nav-pc li:nth-of-type(2){
+  margin-left:36px;
+}
+
+#main-photo{
+  max-width: 1080px;
+  height: 100%;
+  width:100%;
+}
+
+.index-h2{
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/*About*/
+#about-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-photo{
+  border-radius:50%;
+  margin-left:160px;
+}
+
+#about-explain{
+  font-size: 18px;
+  margin-right:80px;
+  margin-top:30px;
+}
+
+#index-h3{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*Works*/
+#works-flex{
+  display: flex;
+  justify-content: space-between;
+  margin-left:150px;
+  margin-right:150px;
+} 
+
+.works-explain p{
+  text-align: left;
+}
+
+.works-photo{
+  max-width: 240px;  
+}
+
+#copyright {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* 画面幅が767px以下のとき */
+@media screen and (max-width: 767px) {
+  /* スマートフォン用のスタイルを指定する */
+  
+#about{
+    margin: 20px 0 20px 0;
+}
+
+#about-flex {
+  flex-direction: column; 
+  align-items: center;
+}
+
+#about-explain{
+margin:0 auto 0 auto;
+}
+
+#about-photo{
+  border-radius:50%;
+  margin:0 auto 0 auto;
+}
+
+#works-flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+.works-photo{
+  max-width: 360px;  
+}
+
+.works-explain p{
+  text-align: center;
+}
+
